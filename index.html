@@ -1,155 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asgari Solutions Ltd | Smart Building Controls & Automation</title>
-    <style>
-        :root {
-            --primary: #0a192f;
-            --accent: #00bcd4;
-            --text-light: #f8f9fa;
-            --text-dark: #212529;
-            --bg-light: #f4f7f6;
-            --card-bg: #ffffff;
-        }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Asgari Solutions Ltd | Engineered Intelligence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#c1c6d7",
+                        "on-error-container": "#ffdad6",
+                        "outline-variant": "#414755",
+                        "primary-container": "#4b8eff",
+                        "secondary-fixed": "#d3e4fe",
+                        "primary-fixed": "#d8e2ff",
+                        "surface-bright": "#31394d",
+                        "inverse-surface": "#dae2fd",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-tint": "#adc6ff",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container-high": "#222a3d",
+                        "on-tertiary-fixed-variant": "#7c2e00",
+                        "outline": "#8b90a0",
+                        "primary": "#adc6ff",
+                        "on-surface": "#dae2fd",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "on-secondary-fixed": "#0b1c30",
+                        "tertiary": "#ffb595",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "surface-container-highest": "#2d3449",
+                        "on-primary-fixed-variant": "#004493",
+                        "on-primary-fixed": "#001a41",
+                        "surface": "#0b1326",
+                        "inverse-primary": "#005bc1",
+                        "primary-fixed-dim": "#adc6ff",
+                        "surface-container-lowest": "#060e20",
+                        "inverse-on-surface": "#283044",
+                        "background": "#0b1326",
+                        "on-tertiary-container": "#4c1a00",
+                        "secondary-container": "#3a4a5f",
+                        "surface-variant": "#2d3449",
+                        "surface-container-low": "#131b2e",
+                        "surface-container": "#171f33",
+                        "secondary": "#b7c8e1",
+                        "on-secondary-container": "#a9bad3",
+                        "on-primary": "#002e69",
+                        "on-background": "#dae2fd",
+                        "surface-dim": "#0b1326",
+                        "on-tertiary": "#571e00",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-primary-container": "#00285c",
+                        "on-secondary": "#213145",
+                        "tertiary-container": "#ef6719"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "40px",
+                        "base": "4px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "48px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "sm": "8px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "code-md": ["JetBrains Mono"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "display": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "headline-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "code-md": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    }
+                }
+            }
         }
-
+    </script>
+<style>
         body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: var(--primary);
-            color: var(--text-light);
-            padding: 2rem 1rem;
-            text-align: center;
-            border-bottom: 4px solid var(--accent);
-        }
-
-        header h1 {
-            font-size: 2.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            color: var(--accent);
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 2rem;
-            font-size: 1.8rem;
-            color: var(--primary);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            border-radius: 8px;
-            padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-top: 3px solid var(--accent);
-        }
-
-        .card h3 {
-            color: var(--primary);
-            margin-bottom: 0.75rem;
-        }
-
-        .contact-card {
-            background: var(--primary);
-            color: var(--text-light);
-            border-radius: 8px;
-            padding: 2.5rem;
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto 3rem auto;
-        }
-
-        .contact-card h2 {
-            margin-bottom: 1rem;
-            color: var(--accent);
-        }
-
-        .contact-card a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-bottom: 2px solid var(--accent);
-            padding-bottom: 2px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            background: #050c1a;
-            color: #8892b0;
-            font-size: 0.9rem;
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
         }
     </style>
 </head>
-<body>
-
-    <header>
-        <h1>Asgari Solutions Ltd</h1>
-        <p>Smart Home, Building Controls & Integrated Security Architecture</p>
-    </header>
-
-    <div class="container">
-        <h2 class="section-title">Smart Home & Building Engineering Services</h2>
-        
-        <div class="services-grid">
-            <div class="card">
-                <h3>Building Automation & KNX Systems</h3>
-                <p>Design, programming, and commissioning of KNX/EIB automation topologies, touchscreens, logic controllers, and smart HVAC integration.</p>
-            </div>
-
-            <div class="card">
-                <h3>Commercial & Residential Networking</h3>
-                <p>Deployment of UniFi network infrastructures, site layout optimisation, VLAN routing, and high-availability power back-ups.</p>
-            </div>
-
-            <div class="card">
-                <h3>CCTV & Access Control</h3>
-                <p>Integration of UniFi IP security camera systems, dynamic event detection metadata, smart doorbell systems, and centralised access controllers.</p>
-            </div>
-        </div>
-
-        <div class="contact-card">
-            <h2>Get in Touch</h2>
-            <p>For engineering inquiries, site consultations, or project quotes:</p>
-            <br>
-            <p><a href="mailto:admin@asgarisolutions.com">admin@asgarisolutions.com</a></p>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 Asgari Solutions Ltd. All rights reserved.</p>
-    </footer>
-
-</body>
-</html>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container bg-surface">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-surface dark:bg-surface border-b border-outline-variant dark:border-outline-variant bg-surface-container">
+<div class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-sm">
+<img alt="Asgari Solutions Ltd Logo" class="h-8 w-8 object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8rrKVi23N-Z5Re3IsPNNp2slgafGEcwT6vj0qBek4SSnPdPFHFoUHHZVLDfyBE69fHqW5ORZpI1yRfjcqhy6U1r0kW8NVnlvNoTKo2Ssg2rU8ljmQA6z8U55ddvmcEffJ6W9Ubg90I9aLskd6q-DeYFMvavRpDdvBdjSRpRUw_-9YCbJsXmVbt4gF8OBPr4DKMdziljPJ78_Jm4GaXOQ6BQM-61TVUz-fxn3yWC0cbz3Bu-S1cQ4aKA"/>
+<span class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface">Asgari Solutions Ltd</span>
+</div>
+<nav class="hidden md:flex gap-lg">
+<a class="font-body-md text-body-md text-primary dark:text-primary border-b-2 border-primary pb-1 active:opacity-80 transition-opacity" href="#solutions">Solutions</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#disciplines">Disciplines</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#methodology">Methodology</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary font-body-sm text-body-sm font-semibold px-4 py-2 rounded transition-colors hover:bg-primary-fixed">
+                Get Started
+            </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center border-b border-outline-variant">
+<div class="absolute inset-0 z-0">
+<img alt="High-tech facility architectural photography at dusk" class="w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhVqCsm646MLGu3avITntMJCSqRF6RC1aGIwe3L1FQqbsBcLXYY39McTJo5kfcSscbnsAso8mLx-3dfUePN2coaEB8CJnUCdMFizyaAucwtmTRAWy5NHP2DswNNrqCyudwVSBtIqWsS2LvAd6aw2HwKpbGX3iuz2-vh0QCJhSB7AnNp2h_CjUg1hrAG5CElAl9Rl_Ow4Ex5CFB6GpXGiEqpQdlWn8wJS8vp8L6o7SPFTw9trThtWPO7Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto text-center space-y-md">
+<h1 class="font-display text-display text-on-surface max-w-4xl mx-auto">Engineered Intelligence for the Modern Build</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">High-performance automation, networking, and security systems designed with technical rigor.</p>
+<div class="pt-sm">
+<button class="bg-primary text-on-primary font-body-md text-body-md font-semibold px-6 py-3 rounded hover:bg-primary-fixed transition-colors border border-transparent">
+                        Start a Project
+                    </button>
+</div>
+</div>
+</section>
+<!-- Disciplines Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto" id="disciplines">
+<div class="mb-xl">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Core Capabilities</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-xs">Technical Disciplines</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container border border-outline-variant rounded p-lg flex flex-col gap-sm hover:border-outline transition-colors bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-3xl mb-xs" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Automation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">KNX standard integration for robust, deterministic environmental control and facility management.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container border border-outline-variant rounded p-lg flex flex-col gap-sm hover:border-outline transition-colors bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-3xl mb-xs" style="font-variation-settings: 'FILL' 1;">router</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Networking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enterprise-grade UniFi deployments ensuring high-throughput, low-latency connectivity across complex topologies.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container border border-outline-variant rounded p-lg flex flex-col gap-sm hover:border-outline transition-colors bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-3xl mb-xs" style="font-variation-settings: 'FILL' 1;">shield</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Security Architecture</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Integrated access control and surveillance systems designed with zero-trust principles and fail-safe mechanisms.</p>
+</div>
+</div>
+</section>
+<!-- Methodology Section -->
+<section class="py-xl relative border-y border-outline-variant bg-surface-container-low bg-surface-container-lowest" id="methodology">
+<div class="absolute inset-0 z-0 opacity-20 pointer-events-none mix-blend-luminosity">
+<img alt="Server rack networking equipment with glowing blue lights in a modern data center environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VoGwUPgvTVCH7Wr6_InFICDJnnhkQZ4_JRnLGUiSHq-uXsPCNCBRQKxaImjZQttjHZeTIN4Flu6ajVd60buBY1p7nKnNXfxs4z_qb66FyYVSuhIcfuPgGjUtSdvAiUFOU--0qox0umCfYOWaJPn2069i2PqcGHDk9jqNHNSjVBmc4p5GuctI38f0rGCb7hyVLD5q8PkbLHkp-glFhfXWSdQQ-zCzqA-W-ptj30htDFg52GrVmiBwuEDmg"/>
+<div class="absolute inset-0 bg-background/80"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto">
+<div class="mb-lg md:mb-xl">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Process</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-xs">Deployment Methodology</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-md md:gap-gutter">
+<!-- Step 1 -->
+<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
+<span class="font-code-md text-code-md text-primary">01.</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Survey</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive site analysis and requirements gathering to establish precise operational baselines.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
+<span class="font-code-md text-code-md text-primary">02.</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Design</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineering rigorous system architectures utilizing standardized protocols and modular components.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
+<span class="font-code-md text-code-md text-primary">03.</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Deployment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Execution by certified technicians ensuring exacting standards of physical and logical installation.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
+<span class="font-code-md text-code-md text-primary">04.</span>
+<h4 class="font-headline-md text-headline-md text-on-surface">Support</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous monitoring, proactive maintenance, and immediate technical response for operational continuity.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto" id="contact">
+<div class="max-w-2xl mx-auto bg-surface-container border border-outline-variant rounded p-lg md:p-xl bg-surface-container-high">
+<div class="mb-lg text-center">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Initiate Contact</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Submit project parameters for preliminary engineering review.</p>
+</div>
+<form class="space-y-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Organization</label>
+<input class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all bg-surface-container-lowest" placeholder="Company Name" type="text"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Point of Contact</label>
+<input class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all bg-surface-container-lowest" placeholder="Full Name" type="text"/>
+</div>
+</div>
+<div class="space-y-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Secure Comm Link (Email)</label>
+<input class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all bg-surface-container-lowest" placeholder="user@domain.com" type="email"/>
+</div>
+<div class="space-y-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant block">Project Scope Overview</label>
+<textarea class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all resize-none bg-surface-container-lowest" placeholder="Detail operational requirements and technical constraints..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-body-md text-body-md font-semibold px-6 py-3 rounded hover:bg-primary-fixed transition-colors mt-sm" type="button">
+                        Submit Inquiry
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-xl bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-center py-lg px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto gap-md">
+<div class="font-label-caps text-label-caps text-on-surface-variant">© 2024 Asgari Solutions Ltd. Engineered Intelligence.</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Security Architecture</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Global Support</a>
+</div>
+</div>
+</footer>
+</body></html>
