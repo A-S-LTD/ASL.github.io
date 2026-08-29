@@ -3,263 +3,233 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Asgari Solutions Ltd | Engineered Intelligence</title>
+<title>Asgari Engineering</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
-                    "colors": {
-                        "on-error": "#690005",
+                    colors: {
+                        "outline": "#8f9194",
                         "error": "#ffb4ab",
-                        "on-surface-variant": "#c1c6d7",
-                        "on-error-container": "#ffdad6",
-                        "outline-variant": "#414755",
-                        "primary-container": "#4b8eff",
-                        "secondary-fixed": "#d3e4fe",
-                        "primary-fixed": "#d8e2ff",
-                        "surface-bright": "#31394d",
-                        "inverse-surface": "#dae2fd",
-                        "on-secondary-fixed-variant": "#38485d",
-                        "surface-tint": "#adc6ff",
-                        "on-tertiary-fixed": "#351000",
-                        "surface-container-high": "#222a3d",
-                        "on-tertiary-fixed-variant": "#7c2e00",
-                        "outline": "#8b90a0",
-                        "primary": "#adc6ff",
-                        "on-surface": "#dae2fd",
                         "error-container": "#93000a",
-                        "tertiary-fixed-dim": "#ffb595",
-                        "on-secondary-fixed": "#0b1c30",
-                        "tertiary": "#ffb595",
-                        "secondary-fixed-dim": "#b7c8e1",
-                        "surface-container-highest": "#2d3449",
-                        "on-primary-fixed-variant": "#004493",
-                        "on-primary-fixed": "#001a41",
-                        "surface": "#0b1326",
-                        "inverse-primary": "#005bc1",
-                        "primary-fixed-dim": "#adc6ff",
-                        "surface-container-lowest": "#060e20",
-                        "inverse-on-surface": "#283044",
-                        "background": "#0b1326",
-                        "on-tertiary-container": "#4c1a00",
-                        "secondary-container": "#3a4a5f",
-                        "surface-variant": "#2d3449",
-                        "surface-container-low": "#131b2e",
-                        "surface-container": "#171f33",
-                        "secondary": "#b7c8e1",
-                        "on-secondary-container": "#a9bad3",
-                        "on-primary": "#002e69",
-                        "on-background": "#dae2fd",
-                        "surface-dim": "#0b1326",
-                        "on-tertiary": "#571e00",
-                        "tertiary-fixed": "#ffdbcc",
-                        "on-primary-container": "#00285c",
-                        "on-secondary": "#213145",
-                        "tertiary-container": "#ef6719"
+                        "on-secondary": "#243144",
+                        "on-secondary-container": "#a8b6cd",
+                        "on-primary-fixed-variant": "#454749",
+                        "on-secondary-fixed": "#0e1c2e",
+                        "on-primary-container": "#7d7e81",
+                        "secondary-container": "#3a475b",
+                        "primary-fixed": "#e2e2e5",
+                        "on-primary": "#2f3133",
+                        "tertiary-container": "#051525",
+                        "surface-tint": "#c6c6c9",
+                        "primary-fixed-dim": "#c6c6c9",
+                        "inverse-on-surface": "#313030",
+                        "on-background": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "outline-variant": "#45474a",
+                        "surface-container": "#201f1f",
+                        "surface-bright": "#3a3939",
+                        "tertiary": "#b9c8de",
+                        "secondary-fixed": "#d6e3fc",
+                        "primary": "#c6c6c9",
+                        "background": "#141313",
+                        "tertiary-fixed": "#d4e4fa",
+                        "on-surface-variant": "#c5c6ca",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-highest": "#353435",
+                        "surface-variant": "#353435",
+                        "on-error": "#690005",
+                        "on-primary-fixed": "#1a1c1e",
+                        "on-secondary-fixed-variant": "#3a475b",
+                        "tertiary-fixed-dim": "#b9c8de",
+                        "surface-dim": "#141313",
+                        "primary-container": "#121416",
+                        "surface-container-high": "#2a2a2a",
+                        "surface": "#141313",
+                        "on-tertiary-fixed": "#0d1c2d",
+                        "secondary": "#bac7df",
+                        "on-tertiary": "#233143",
+                        "on-surface": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#bac7df",
+                        "surface-container-lowest": "#0e0e0e",
+                        "inverse-primary": "#5d5e61",
+                        "on-tertiary-container": "#718094",
+                        "on-tertiary-fixed-variant": "#39485a"
                     },
-                    "borderRadius": {
+                    borderRadius: {
                         "DEFAULT": "0.125rem",
                         "lg": "0.25rem",
                         "xl": "0.5rem",
                         "full": "0.75rem"
                     },
-                    "spacing": {
-                        "xl": "40px",
-                        "base": "4px",
-                        "margin-mobile": "16px",
-                        "margin-desktop": "48px",
+                    spacing: {
+                        "margin": "32px",
+                        "sm": "8px",
+                        "lg": "24px",
                         "md": "16px",
                         "xs": "4px",
+                        "xl": "48px",
                         "gutter": "24px",
-                        "sm": "8px",
-                        "lg": "24px"
+                        "base": "4px"
                     },
-                    "fontFamily": {
-                        "headline-lg-mobile": ["Inter"],
-                        "code-md": ["JetBrains Mono"],
-                        "body-md": ["Inter"],
-                        "body-sm": ["Inter"],
+                    fontFamily: {
                         "body-lg": ["Inter"],
+                        "display-lg": ["Inter"],
                         "headline-md": ["Inter"],
-                        "display": ["Inter"],
-                        "label-caps": ["Inter"],
-                        "headline-lg": ["Inter"]
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["JetBrains Mono"]
                     },
-                    "fontSize": {
-                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
-                        "code-md": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-md": ["20px", { "lineHeight": "1.4", "fontWeight": "600" }],
-                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700" }],
-                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+                    fontSize: {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }]
                     }
                 }
             }
         }
     </script>
-<style>
-        body {
-            background-color: theme('colors.background');
-            color: theme('colors.on-background');
-        }
-    </style>
 </head>
-<body class="antialiased selection:bg-primary-container selection:text-on-primary-container bg-surface">
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
 <!-- TopNavBar -->
-<header class="w-full sticky top-0 z-50 bg-surface dark:bg-surface border-b border-outline-variant dark:border-outline-variant bg-surface-container">
-<div class="flex justify-between items-center h-16 px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-sm">
-<img alt="Asgari Solutions Ltd Logo" class="h-8 w-8 object-contain rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8rrKVi23N-Z5Re3IsPNNp2slgafGEcwT6vj0qBek4SSnPdPFHFoUHHZVLDfyBE69fHqW5ORZpI1yRfjcqhy6U1r0kW8NVnlvNoTKo2Ssg2rU8ljmQA6z8U55ddvmcEffJ6W9Ubg90I9aLskd6q-DeYFMvavRpDdvBdjSRpRUw_-9YCbJsXmVbt4gF8OBPr4DKMdziljPJ78_Jm4GaXOQ6BQM-61TVUz-fxn3yWC0cbz3Bu-S1cQ4aKA"/>
-<span class="font-headline-md text-headline-md font-bold text-on-surface dark:text-on-surface">Asgari Solutions Ltd</span>
+<nav class="bg-background dark:bg-background text-primary dark:text-primary docked full-width top-0 border-b border-outline-variant/40 flat no shadows fixed top-0 w-full z-50 flex justify-between items-center px-margin py-md max-w-[1440px] mx-auto">
+<div class="flex items-center gap-md">
+<img alt="Asgari Engineering Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT25tmacJim3Rya1BJ6-aAEdWkfXwOMs5WvkciTw-3-ceC5G6fzLM1Rpylaj_40zdRBuySZlfC0H5h_5qhmjzMB_BmubF6DbJ63bWnmpmXKT4mbKp_JNq3GtvbaJBgcwFJl9ilDybnmZ3w89XWRjpgf-XmGwGPn2dA4RPVGA-aAoPJf3jH0HlqGMB0x6gfMjPtAJ-m6svdq21n37wSXTAnHCjnSjbkxXENzgyK6y0qvkMoVgTn2Jpf3w"/>
+<span class="font-headline-md text-headline-md font-bold tracking-tighter text-on-background dark:text-on-background">ASGARI ENGINEERING</span>
 </div>
-<nav class="hidden md:flex gap-lg">
-<a class="font-body-md text-body-md text-primary dark:text-primary border-b-2 border-primary pb-1 active:opacity-80 transition-opacity" href="#solutions">Solutions</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#disciplines">Disciplines</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#methodology">Methodology</a>
-<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200" href="#contact">Contact</a>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#capabilities">Capabilities</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#performance">Performance</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#systems">Systems</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-200 font-label-sm text-label-sm" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-lg py-sm rounded font-label-sm text-label-sm hover:opacity-80 scale-95 transition-all">Inquire</button>
 </nav>
-<button class="hidden md:block bg-primary text-on-primary font-body-sm text-body-sm font-semibold px-4 py-2 rounded transition-colors hover:bg-primary-fixed">
-                Get Started
-            </button>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</header>
-<main>
+<!-- Main Content -->
+<main class="flex-grow pt-[80px]">
 <!-- Hero Section -->
-<section class="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center border-b border-outline-variant">
+<section class="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center">
 <div class="absolute inset-0 z-0">
-<img alt="High-tech facility architectural photography at dusk" class="w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhVqCsm646MLGu3avITntMJCSqRF6RC1aGIwe3L1FQqbsBcLXYY39McTJo5kfcSscbnsAso8mLx-3dfUePN2coaEB8CJnUCdMFizyaAucwtmTRAWy5NHP2DswNNrqCyudwVSBtIqWsS2LvAd6aw2HwKpbGX3iuz2-vh0QCJhSB7AnNp2h_CjUg1hrAG5CElAl9Rl_Ow4Ex5CFB6GpXGiEqpQdlWn8wJS8vp8L6o7SPFTw9trThtWPO7Q"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50"></div>
+<img alt="Modern industrial building at twilight, glowing with technical precision and structural integrity." class="w-full h-full object-cover opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRBhNU4lz0PE30ph6zRZLJczMyuUk-Ld_9TLo5VNhLta2MQAYQnC65QsIBa7uPUepO3uH_0MrnM13GTkI6OsYHkgEAlrh50TCJhUWG5nWIIMv0jl6FXcQET1cnsIAH9q6FgGJWKwZ0tvByFvaqauR6B854nnHAmqEEVgs45zRm_8sXiRTxH9RgDYuh2TPatqDq-PxBQff_jIJue76VXw-kwSGC55VfntSIaGoR1nUT7TCn3esDxGnuww"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto text-center space-y-md">
-<h1 class="font-display text-display text-on-surface max-w-4xl mx-auto">Engineered Intelligence for the Modern Build</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">High-performance automation, networking, and security systems designed with technical rigor.</p>
-<div class="pt-sm">
-<button class="bg-primary text-on-primary font-body-md text-body-md font-semibold px-6 py-3 rounded hover:bg-primary-fixed transition-colors border border-transparent">
-                        Start a Project
-                    </button>
-</div>
+<div class="relative z-10 max-w-[1440px] w-full px-margin mx-auto text-center">
+<h1 class="font-display-lg text-display-lg md:font-display-lg md:text-display-lg font-display-lg-mobile text-display-lg-mobile mb-md max-w-4xl mx-auto">Engineering for High-Performance Infrastructure.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Asgari Engineering provides industrial-grade smart systems, precision networking, and integrated building controls for modern commercial and high-end residential projects.</p>
 </div>
 </section>
-<!-- Disciplines Section -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto" id="disciplines">
-<div class="mb-xl">
-<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Core Capabilities</span>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-xs">Technical Disciplines</h2>
+<!-- Capabilities -->
+<section class="py-xl max-w-[1440px] mx-auto px-margin" id="capabilities">
+<div class="mb-lg">
+<h2 class="font-headline-md text-headline-md border-b border-outline-variant/40 pb-sm inline-block">Capabilities</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <!-- Card 1 -->
-<div class="bg-surface-container border border-outline-variant rounded p-lg flex flex-col gap-sm hover:border-outline transition-colors bg-surface-container-low">
-<span class="material-symbols-outlined text-primary text-3xl mb-xs" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
-<h3 class="font-headline-md text-headline-md text-on-surface">Automation</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">KNX standard integration for robust, deterministic environmental control and facility management.</p>
+<div class="border border-outline-variant/40 bg-surface-container p-lg rounded flex flex-col gap-md">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="memory">memory</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Building Automation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Centralized control logic for HVAC, lighting, and security infrastructure, engineered for maximum efficiency and rigorous operational standards.</p>
 </div>
 <!-- Card 2 -->
-<div class="bg-surface-container border border-outline-variant rounded p-lg flex flex-col gap-sm hover:border-outline transition-colors bg-surface-container-low">
-<span class="material-symbols-outlined text-primary text-3xl mb-xs" style="font-variation-settings: 'FILL' 1;">router</span>
-<h3 class="font-headline-md text-headline-md text-on-surface">Networking</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Enterprise-grade UniFi deployments ensuring high-throughput, low-latency connectivity across complex topologies.</p>
+<div class="border border-outline-variant/40 bg-surface-container p-lg rounded flex flex-col gap-md">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="router">router</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Secure Networking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">High-throughput, low-latency network architectures designed for mission-critical data transmission and resilient connectivity.</p>
 </div>
 <!-- Card 3 -->
-<div class="bg-surface-container border border-outline-variant rounded p-lg flex flex-col gap-sm hover:border-outline transition-colors bg-surface-container-low">
-<span class="material-symbols-outlined text-primary text-3xl mb-xs" style="font-variation-settings: 'FILL' 1;">shield</span>
-<h3 class="font-headline-md text-headline-md text-on-surface">Security Architecture</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Integrated access control and surveillance systems designed with zero-trust principles and fail-safe mechanisms.</p>
+<div class="border border-outline-variant/40 bg-surface-container p-lg rounded flex flex-col gap-md">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="dns">dns</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">System Integration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Seamless unification of disparate hardware protocols into a single, cohesive management interface for complex facility operations.</p>
 </div>
 </div>
 </section>
-<!-- Methodology Section -->
-<section class="py-xl relative border-y border-outline-variant bg-surface-container-low bg-surface-container-lowest" id="methodology">
-<div class="absolute inset-0 z-0 opacity-20 pointer-events-none mix-blend-luminosity">
-<img alt="Server rack networking equipment with glowing blue lights in a modern data center environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VoGwUPgvTVCH7Wr6_InFICDJnnhkQZ4_JRnLGUiSHq-uXsPCNCBRQKxaImjZQttjHZeTIN4Flu6ajVd60buBY1p7nKnNXfxs4z_qb66FyYVSuhIcfuPgGjUtSdvAiUFOU--0qox0umCfYOWaJPn2069i2PqcGHDk9jqNHNSjVBmc4p5GuctI38f0rGCb7hyVLD5q8PkbLHkp-glFhfXWSdQQ-zCzqA-W-ptj30htDFg52GrVmiBwuEDmg"/>
-<div class="absolute inset-0 bg-background/80"></div>
+<!-- Performance Standard -->
+<section class="py-xl bg-surface-container-low" id="performance">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-headline-md text-headline-md mb-md">Performance Standard</h2>
+<h3 class="font-display-lg text-display-lg md:font-display-lg md:text-display-lg font-display-lg-mobile text-display-lg-mobile mb-lg">Functional Rigor &amp; Industrial Precision</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Decades of Technical Mastery applied to every project phase. We design Scalable Solutions that adapt to evolving technological landscapes while maintaining unyielding structural and operational integrity.</p>
+<div class="flex gap-md">
+<span class="bg-surface-container px-md py-xs rounded border border-outline-variant/40 font-label-sm text-label-sm text-primary">ISO 9001 Certified</span>
+<span class="bg-surface-container px-md py-xs rounded border border-outline-variant/40 font-label-sm text-label-sm text-primary">MIL-SPEC Standards</span>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto">
-<div class="mb-lg md:mb-xl">
-<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Process</span>
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mt-xs">Deployment Methodology</h2>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-md md:gap-gutter">
-<!-- Step 1 -->
-<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
-<span class="font-code-md text-code-md text-primary">01.</span>
-<h4 class="font-headline-md text-headline-md text-on-surface">Survey</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive site analysis and requirements gathering to establish precise operational baselines.</p>
-</div>
-<!-- Step 2 -->
-<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
-<span class="font-code-md text-code-md text-primary">02.</span>
-<h4 class="font-headline-md text-headline-md text-on-surface">Design</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Engineering rigorous system architectures utilizing standardized protocols and modular components.</p>
-</div>
-<!-- Step 3 -->
-<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
-<span class="font-code-md text-code-md text-primary">03.</span>
-<h4 class="font-headline-md text-headline-md text-on-surface">Deployment</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Execution by certified technicians ensuring exacting standards of physical and logical installation.</p>
-</div>
-<!-- Step 4 -->
-<div class="flex flex-col gap-xs border-t border-outline-variant pt-sm">
-<span class="font-code-md text-code-md text-primary">04.</span>
-<h4 class="font-headline-md text-headline-md text-on-surface">Support</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Continuous monitoring, proactive maintenance, and immediate technical response for operational continuity.</p>
+<div class="border border-outline-variant/40 rounded p-sm bg-surface-container-highest">
+<img class="w-full h-auto rounded object-cover" data-alt="Close up shot of a complex circuit board with glowing blue components, demonstrating precision engineering and advanced technology in a clean room environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxoeedm8kbyFb8QBf8d39s38TDumX4zM6CbWnRXkdptX9NAEjK2AoL06eef4tfTTHrXdboffT6bGaZ4Z478y5YwNv3uWpuK-xHFm2u-dusrw_sR0eAfFbi8HT7Mgna4rx_L7Yba610xMvpycAPC_l7eCvG5MwIQ25qWMPOG76GV3XSofGFoT906CMAIz48ffZCOyhaXYkkW3OMozKaRmYZNEqy3trWZ2qT-SrIWIseMDdfVBQGfqG9Sw"/>
 </div>
 </div>
 </div>
 </section>
-<!-- Contact Section -->
-<section class="py-xl px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto" id="contact">
-<div class="max-w-2xl mx-auto bg-surface-container border border-outline-variant rounded p-lg md:p-xl bg-surface-container-high">
-<div class="mb-lg text-center">
-<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Initiate Contact</h2>
-<p class="font-body-md text-body-md text-on-surface-variant mt-xs">Submit project parameters for preliminary engineering review.</p>
+<!-- Infrastructure Showcase -->
+<section class="py-xl max-w-[1440px] mx-auto px-margin" id="systems">
+<div class="mb-lg flex justify-between items-end border-b border-outline-variant/40 pb-sm">
+<h2 class="font-headline-md text-headline-md">Infrastructure Showcase</h2>
+<a class="font-label-sm text-label-sm text-primary hover:text-on-surface flex items-center gap-xs" href="#">View Full Specs <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span></a>
 </div>
-<form class="space-y-md">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
-<div class="space-y-xs">
-<label class="font-label-caps text-label-caps text-on-surface-variant block">Organization</label>
-<input class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all bg-surface-container-lowest" placeholder="Company Name" type="text"/>
-</div>
-<div class="space-y-xs">
-<label class="font-label-caps text-label-caps text-on-surface-variant block">Point of Contact</label>
-<input class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all bg-surface-container-lowest" placeholder="Full Name" type="text"/>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter h-[600px]">
+<div class="md:col-span-8 border border-outline-variant/40 rounded relative overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A pristine, highly organized server room with rows of black racks, blue LED status lights, and perfectly managed cable bundles, conveying industrial stability and high tech infrastructure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFGyDVEgkRavlgUKnGSQHa3FIuqxPpW2aD85xjQPg8CtvP4PylycG2tTaPm2PFx5JAqAncvJPQOGKeDTGPt19qHTBQ7A2IiXm9d9JXaAcz1su6b42xo8YqcHOHx_P3NVTM176gFTuGbJHyY0afSciErUYewfQehn36JurYjrFyQYo5UdJTI3enMfyqBBZ47aw1XTbOflg8PlrPJ48yKAb3v3zOuvWIrpNqAD0uiy-uvJlE83OFjLLBaA"/>
+<div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-background/90 to-transparent p-lg">
+<h4 class="font-headline-md text-headline-md">Core Processing Array</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Data Center Delta-V</p>
 </div>
 </div>
-<div class="space-y-xs">
-<label class="font-label-caps text-label-caps text-on-surface-variant block">Secure Comm Link (Email)</label>
-<input class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all bg-surface-container-lowest" placeholder="user@domain.com" type="email"/>
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="flex-grow border border-outline-variant/40 rounded relative overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Detailed view of a building management system control panel screen, showing complex schematics and real-time data metrics in a sharp, monochromatic blue aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNq3V3in4rIm9MzoyYz8DK0hgmCSdfyZ2fvHpxbxpznDQfj9MdQLXW8iUXUCN9nl583cxEiVJN5GNDSQxcNLEjqFpxc-_kN7OLtKR1AUfb_tpSNhYL6ECza7VEG8bLu1lq1XYVkl9JBgEIgsL4d9gXaAIFzdVLXArzmeHZWDhfQiRpF4O__PEbMUZTnamG3uGkKrfEnlU5LVxZuBw2ejCaWBGqP_gwXGhyWnMxAbsA_SF5IUOBqKuR4g"/>
+<div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-background/90 to-transparent p-md">
+<h4 class="font-headline-md text-headline-md text-[18px]">Telemetry Dashboard</h4>
 </div>
-<div class="space-y-xs">
-<label class="font-label-caps text-label-caps text-on-surface-variant block">Project Scope Overview</label>
-<textarea class="w-full bg-surface border border-outline-variant rounded px-sm py-2 text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none font-body-sm transition-all resize-none bg-surface-container-lowest" placeholder="Detail operational requirements and technical constraints..." rows="4"></textarea>
 </div>
-<button class="w-full bg-primary text-on-primary font-body-md text-body-md font-semibold px-6 py-3 rounded hover:bg-primary-fixed transition-colors mt-sm" type="button">
-                        Submit Inquiry
-                    </button>
-</form>
+<div class="flex-grow border border-outline-variant/40 rounded relative overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Macro photography of precision-machined fiber optic connectors plugged into a high-density switch, highlighting metallic silver and cobalt blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqEWdZDx48BRvbz36vK72Q8NyN5Yzp4jXKoTbzdDk1hiK15XMEeRZS2KkeNpgI3nAvVsRt-AomZc09AvY0WakoPfPLkvicsex4WdbNjmJWWIJUNJnkr5ccXn5pXRn45lbavm9JK1vt3qCTkhEEogUM6dl8yQWUrdsdvgyJUXqN_kBxfRHESTz4QS9kTdYiuIOPq_5ZLI0fKTy8Iy5_eLL-YZ7v4rTggJg6KkiSn4gUkMwlKh7Ih7egow"/>
+<div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-background/90 to-transparent p-md">
+<h4 class="font-headline-md text-headline-md text-[18px]">Optical Node Hub</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Professional Inquiry -->
+<section class="py-xl bg-surface-container-high border-t border-outline-variant/40" id="contact">
+<div class="max-w-[800px] mx-auto px-margin text-center">
+<span class="material-symbols-outlined text-primary text-[48px] mb-md" data-icon="terminal">terminal</span>
+<h2 class="font-display-lg text-display-lg md:font-display-lg md:text-display-lg font-display-lg-mobile text-display-lg-mobile mb-md">Initiate Project Inquiry</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Connect with our engineering division to discuss technical requirements and system architectures for your upcoming deployment.</p>
+<div class="flex flex-col sm:flex-row gap-md justify-center">
+<button class="bg-primary text-on-primary px-xl py-md rounded font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center justify-center gap-sm">
+                        SECURE CONTACT <span class="material-symbols-outlined text-[16px]" data-icon="lock">lock</span>
+</button>
+<button class="border border-outline-variant/40 text-on-surface px-xl py-md rounded font-label-sm text-label-sm hover:bg-surface-container transition-colors flex items-center justify-center gap-sm">
+                        DOWNLOAD SPECS <span class="material-symbols-outlined text-[16px]" data-icon="download">download</span>
+</button>
+</div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full mt-xl bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline-variant bg-surface">
-<div class="flex flex-col md:flex-row justify-between items-center py-lg px-margin-mobile md:px-margin-desktop max-w-screen-2xl mx-auto gap-md">
-<div class="font-label-caps text-label-caps text-on-surface-variant">© 2024 Asgari Solutions Ltd. Engineered Intelligence.</div>
-<div class="flex flex-wrap justify-center gap-md">
-<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Privacy Policy</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Terms of Service</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Security Architecture</a>
-<a class="font-body-sm text-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-on-surface dark:hover:text-on-surface transition-colors cursor-pointer" href="#">Global Support</a>
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest text-on-surface dark:text-on-surface full-width bottom-0 border-t border-outline-variant/40 flat no shadows w-full px-margin py-xl flex flex-col md:flex-row justify-between items-start gap-lg max-w-[1440px] mx-auto">
+<div class="flex flex-col gap-md">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">ASGARI ENGINEERING</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">© 2024 ASGARI ENGINEERING. ALL RIGHTS RESERVED. PRECISION SPECIFICATION V4.0.1</span>
 </div>
+<div class="flex flex-wrap gap-lg">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors outline-none focus:ring-1 focus:ring-primary rounded" href="#">Technical Specs</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors outline-none focus:ring-1 focus:ring-primary rounded" href="#">Accreditation</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors outline-none focus:ring-1 focus:ring-primary rounded" href="#">Privacy Protocol</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors outline-none focus:ring-1 focus:ring-primary rounded" href="#">System Status</a>
 </div>
 </footer>
 </body></html>
